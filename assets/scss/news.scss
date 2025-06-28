@@ -1,0 +1,52 @@
+@import "font";
+@import "variable";
+@import "mixin";
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    box-sizing: border-box;
+}
+
+.news-container{
+    max-width: $max-width-homepage;
+    margin: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    // padding: 80px 20px;
+    justify-content: center;
+    align-items: center;
+    p{
+        @include font($fontAlata);
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }
+    .error{
+        font-size: 60px;
+        color: $primary-blue;
+    }
+    .learmore{
+        text-decoration: none;
+        background-color: $primary-blue;
+        max-width: 250px;
+        padding: 12px 20px;
+        border-radius: 17px;
+        @include font($fontAlata);
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover{
+            color: black;
+            background-color: white;
+            filter: drop-shadow(0 15px 10px rgba(26, 17, 20, 0.4));
+        }
+    }
+}
+
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/HTMLImporter.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/image/index/Favicon.png">
+    <title>cokhimika</title>
+    <style>
+        @font-face {
+            font-family: "Alata";
+            src: url("assets/font/Alata/Alata-Regular.ttf");
+        }
+        #menu-contact, #menu-contact h5{
+            color: rgb(46, 105, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- top -->
+    <script>HTMLImporter.import("menu.html");</script>
+ 
+    
+    <div class="contact">
+        <div lang="en" class="contact-title">
+            CONTACT
+        </div>
+        <div lang="vi" class="contact-title">
+            LIÊN HỆ
+        </div>
+        <div class="contact-content">
+            <div class="info">
+                <h1 lang="vi">
+                CÔNG TY TNHH TM<br>
+                CƠ KHÍ CHÍNH XÁC MINA
+                </h1>
+                 <h1 lang="en">
+                MINA PRECISION <br>
+                MECHANICS CO., LTD.
+                </h1>
+
+                <div class="contact-item">
+                    <div class="icon">
+                        <img src="assets/image/contact/contact1.svg" alt="">
+                    </div>
+                    <div>
+                        0934 171073 (Mr. Thiên)<br>
+                        0907 572529 (Mr. Vũ)
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">
+                        <img src="assets/image/contact/contact2.svg" alt="">
+                    </div>
+                    <div>
+                        cokhimina@gmail.com<br>
+                        chetaomay.spkt@gmail.com
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">
+                        <img src="assets/image/contact/contact3.svg" alt="">
+                    </div>
+                    <div lang="vi">
+                        861 Quốc lộ 1K, Tân An, Phường Tân Đông Hiệp, Tp.Dĩ An,
+                        Tỉnh Bình Dương.
+                    </div>
+                    <div lang="en">
+                        861 National Route 1K, Tan An, Tan Dong Hiep Ward, Di An
+                        City, Binh Duong Province.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form action="https://formsubmit.co/cokhimina@gmail.com" method="POST">
+                      <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://cokhimina.com/success.html">
+                        
+                    <div class="form-group">
+                        <label for="reason" lang="vi">Nhu cầu liên hệ</label>
+                        <label for="reason" lang="en">Contact demand</label>
+                        <select id="reason" name="reason">
+                            <option lang="vi">Chăm sóc khách hàng</option>
+                            <option lang="en">Customer care</option>
+                            <option lang="vi">Kinh doanh</option>
+                            <option lang="en">Bussiness</option>
+                            <option lang="vi">Tuyển dụng</option>
+                            <option lang="en">Recruitment</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name" lang="vi">Họ và tên</label>
+                        <label for="name" lang="en">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Nguyễn Văn A">  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" lang="vi">Địa chỉ email</label>
+                        <label for="email" lang="en">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="nguyenvana@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" lang="vi">Tin nhắn</label>
+                        <label for="message" lang="en">Message</label>
+                        <textarea id="message" name="message" placeholder="Nhập nội dung..." lang="vi"></textarea>
+                        <textarea id="message" name="message" placeholder="Enter content..." lang="en"></textarea>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="subscribe">
+                        <label for="subscribe" lang="vi"> Đăng ký nhận thông báo </label>
+                        <label for="subscribe" lang="en"> Sign up for notifications </label>
+                    </div>
+
+                    <button class="submit-btn" lang="vi">Gửi liên hệ</button>
+                    <button class="submit-btn" lang="en">Send contact</button>     
+
+                </form>
+               
+            </div>
+        </div>
+    </div>
+    <script>
+        // const form = document.getElementById("contactForm");
+
+        // form.addEventListener("submit", function(e) {
+        // e.preventDefault();
+        // let isValid = true;
+
+        // const name = document.getElementById("name");
+        // const email = document.getElementById("email");
+        // const message = document.getElementById("message");
+        // const reason = document.getElementById("reason");
+
+        // const nameError = document.getElementById("nameError");
+        // const emailError = document.getElementById("emailError");
+        // const messageError = document.getElementById("messageError");
+        // const reasonError = document.getElementById("reasonError");
+
+        // // Reset error
+        // nameError.style.display = emailError.style.display = messageError.style.display = reasonError.style.display = "none";
+
+        // if (!reason.value) {
+        //     reasonError.style.display = "block";
+        //     isValid = false;
+        // }
+
+        // if (!name.value.trim()) {
+        //     nameError.style.display = "block";
+        //     isValid = false;
+        // }
+
+        // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        // if (!email.value.trim() || !emailRegex.test(email.value)) {
+        //     emailError.style.display = "block";
+        //     isValid = false;
+        // }
+
+        // if (!message.value.trim()) {
+        //     messageError.style.display = "block";
+        //     isValid = false;
+        // }
+
+        // if (isValid) {
+        //     alert("Gửi liên hệ thành công!");
+        //     form.reset();
+        // }
+        // });
+    function submit() {
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+       var message = document.getElementById("message");
+    // Reset form
+    name.value = "";
+    email.value = "";
+    message.value = "";
+}
+    </script>
+ 
+
+    <!-- footer -->
+    <script>HTMLImporter.import("footer.html");</script>
+    <script>
+        window.onscroll=function(){scrolltop()};
+        function scrolltop(){
+            if ((document.body.scrollTop>100) || (document.documentElement.scrollTop>100)){
+            $("nav").addClass('nav-sticky');
+            }
+            else {
+                $("nav").removeClass('nav-sticky');
+            };
+        }
+    </script>
+    <!-- toast -->
+    <!-- <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center toast-container-res" style="position: fixed;top: 50%;right: 50%;transform: translate(50%,-50%);">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="1000">
+          <div class="toast-header d-flex justify-content-between" style="background-color: rgb(46, 105, 255);">
+            <div>
+                <img src="assets/image/index/logo.png" class="rounded mr-2" alt="..." style="width:20px;height: 20px;margin-right: 5px;">
+                <strong class="mr-auto">H.S Company</strong>
+            </div>
+            <button type="button" class="btn-close ml-2 mb-1" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body">Your e-mail has been sent.</div>
+        </div>
+    </div> -->
+</body>
+</html>

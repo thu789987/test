@@ -1,0 +1,210 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+input, textarea {
+  border: 1px solid #9AA0A0;
+}
+
+.banner {
+  max-width: 1200px;
+  margin: auto;
+  height: 316px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .text {
+  text-align: center;
+}
+.banner .text h1 {
+  font-family: "Anybody";
+  font-weight: bold;
+  color: #20A049;
+}
+.banner .text p {
+  font-family: "Inter";
+  font-size: medium;
+  color: #FAFAFC;
+  max-width: 552px;
+}
+
+.filters-container {
+  margin: auto;
+  padding: 0 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1200px;
+}
+.filters-container .filters-wrap {
+  list-style-type: none;
+  position: relative;
+  width: 360px;
+  display: table;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+}
+.filters-container .filters-wrap .active {
+  color: #20A049;
+  border-top: 1px solid #20A049;
+}
+.filters-container .filters-wrap li {
+  font-family: "Inter";
+  display: table-cell;
+  max-width: 184px;
+  cursor: pointer;
+  position: relative;
+  font-size: medium;
+  color: #323338;
+  padding: 10px 20px;
+}
+.filters-container .filters-content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: relative;
+  width: 100%;
+}
+.filters-container .filters-content .all {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.filters-container .filters-content .all .single-menu .title-wrap {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-around !important;
+  flex-direction: column;
+  align-items: center;
+  height: 423px;
+  text-align: center;
+  box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2);
+}
+.filters-container .filters-content .all .single-menu .title-wrap .img-hover {
+  position: absolute;
+  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-46%, -50%);
+}
+.filters-container .filters-content .all .single-menu .title-wrap div {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  align-items: center;
+}
+.filters-container .filters-content .all .single-menu .title-wrap div p {
+  max-width: 80%;
+  margin: auto;
+  font-family: "Inter";
+  font-size: 14;
+  font-weight: 400;
+}
+.filters-container .filters-content .all .single-menu .title-wrap div h4 {
+  max-width: 80%;
+  margin: auto;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16;
+}
+.filters-container .filters-content .all .single-menu .title-wrap div img {
+  width: 74px;
+  height: 64px;
+}
+.filters-container .filters-content .all:hover .single-menu .title-wrap .img-hover {
+  opacity: 1;
+}
+.filters-container .filters-content .all:hover .single-menu .title-wrap div p, .filters-container .filters-content .all:hover .single-menu .title-wrap div h4 {
+  color: white;
+}
+
+.pagination {
+  height: 39px;
+  display: flex;
+  max-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.pagination img {
+  width: 22px;
+  height: 22px;
+}
+.pagination div {
+  display: flex;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  align-items: center;
+}
+.pagination div a {
+  text-decoration: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  line-height: 38px;
+  background-color: #E0E0E0;
+  text-align: center;
+  color: #060810;
+  transition: 0.3s;
+}
+.pagination div a:hover {
+  background-color: #060810;
+  color: #E0E0E0;
+}
+
+@media screen and (max-width: 1100px) {
+  .filters-container .filters-content {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .filters-container .filters-wrap #all-responsive {
+    display: none;
+  }
+  .filters-container .filters-content {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .filters-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .filters-container .filters-content {
+    width: 96%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 345px) {
+  .filters-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .filters-container .filters-content {
+    width: 96%;
+    margin: auto;
+  }
+  .filters-container .filters-content .all .single-menu .title-wrap div {
+    row-gap: 5px;
+  }
+  .filters-container .filters-content .all .single-menu .title-wrap div h4 {
+    font-size: 18px;
+  }
+}
